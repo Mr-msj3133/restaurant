@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'poppins Regular';
+    src: url(../font/Poppines/Poppins-Regular.ttf) format(ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --app-color: #C90000;
+    --white:#fff;
+    --orange: #FFC300;
+    --grey:#E3E3E3;
+    --white-app:#F1F1F1;
+    --yellow:#FFF6A3;
+    --grey2:#7D7C7C;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'poppins Regular';
+}
+.containar{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.menu img{
+    width: 4rem;
+    height: 3rem;
+    background-color: var(--app-color);
+   
+}
+.menu__item{
+    display: flex;
+}
+.item{
+    margin-left: 3rem;
+    color: #7D7C7C;
+    font-weight: bold;
+}
+.item:hover{
+    color: var(--app-color);
+    transition: all 150ms ease-in-out;
+}
+.bg-red{
+    color: var(--app-color);
+}
+.header__icon a{
+    border: 1px solid var(--app-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: var(--app-color);
+}
+.header__icon :nth-child(2){
+    margin-left: 0.4rem;
+    background-color: var(--app-color);
+    color: var(--white);
+}
+.nav__btn{
+    cursor: pointer;
+}
+
+
+.main{
+    
+}
+.main__first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__first-title{
+  
+}
+.main__first-title h1{
+    font-size: 3rem;
+    color: var(--app-color);
+    max-width: 30rem;
+}
+.main__first-title p{
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+.main__first-caption{
+    margin-bottom: 2rem;
+}
+.main__first-caption span{
+    font-size: 1.5rem;
+}
+.main__first-caption :nth-child(2){
+    font-weight: bold;
+}
+.main__first-button{
+    display: flex;
+}
+.btn{
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--orange);
+    border-radius: 2rem;
+    font-weight: bold;
+    align-items: center;
+}
+.main__first-icon{
+    max-width: 30%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--whit);
+    background-color: var(--white);
+    border-radius: 100px;
+    padding: 8px 16px;
+    box-shadow: 0 10px 17px 0 rgba(112, 144, 176, 0.20);
+    margin-right: 8rem;
+}
+.main__first-icon span{
+    color: var(--orange);
+    font-weight: bold;
+}
+.main__first-icon button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.main__first-image :nth-child(1){
+    width: 100%;
+}
+
+.main__second{
+    margin-bottom: 7rem;
+}
+.main__second h2{
+    font-size: 48px;
+    color: var(--app-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.main__second h2::before{
+    content: '';
+    position: absolute;
+    background-color: var(--yellow);
+    color: var(--orange);
+    height: 0.5rem;
+    width: 8rem;
+    bottom: 1rem;
+    z-index: -1;
+    border-radius: 1rem;
+}
+.main__second-wrapper{
+
+}
+.main__second-item{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.main__link{
+    margin-right: 1rem;
+
+}
+.main__link a{
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+.main__link a:hover{
+   background-color: var(--orange);
+   font-weight: bold;
+    transition: all 250ms ease-in-out;
+}
+.main__link a img{
+   padding-right: 0.3rem;
+}
+
+
+.wrapper__menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+.see__all{
+    text-align: center;
+    text-decoration: underline;
+    color: var(--grey);
+    font-weight: bold;
+}
+.wrapper{
+    border: 1px solid var(--grey);
+    max-width: 23rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.wrapper__image{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    
+}
+.wrapper__caption h4{
+    font-size: 20px;
+}
+.star{
+
+}
+.score{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.score img{
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--app-color);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+}
+.sale-off{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    gap: 2rem;
+}
+.main__sale h3{
+    color: var(--app-color);
+    font-size: 48px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.main__sale h3::before{
+    content: '';
+    position: absolute;
+    background-color: var(--yellow);
+    color: var(--orange);
+    height: 0.5rem;
+    width: 10.8rem;
+    bottom: 1rem;
+    z-index: -1;
+    border-radius: 1rem;
+}
+.main__sale p{
+    color: var(--grey2);
+    font-weight: bold;
+}
+.sale{
+    max-width: 23rem;
+    max-height: 23rem;
+    position: relative;
+    background-color: var(--grey);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.sale h4{
+    font-size: 35px;
+    color: var(--app-color);
+}
+.sale__price{
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+}
+.sale__price span{
+    color: var(--app-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.sale__price del{
+    color: var(--grey2);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.sale__title{
+    display: flex;
+    align-items: center;
+}
+.sale__title h5{
+    color: var(--grey2);
+}
+.sale__title span{
+    background-color: var(--grey2);
+    display: inline-block;
+    width: 80%;
+    height: 1px;
+}
+.sale__button{
+    background-color: var(--grey2);
+    color: var(--grey);
+}
+.sale__off-button1{
+    margin-top: 6rem;
+}
+.sale__off-button3{
+    margin-top:7rem;
+}
+.img1{
+    position:absolute;
+    right: 0;
+    bottom: 4rem;
+    width: 55%;
+}
+.img2{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+}
+.img3{
+    position:absolute;
+    right: 0;
+    bottom: 2rem;
+    width: 55%;
+}
