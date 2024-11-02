@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "poppins";
+    src: url(/font/Poppines/Poppins-Black.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/image/blurry-blurred-defocused-blur-background-cafee-coffee-shop-restaurant_960396-656661.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    font-family: "poppins";
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: "poppins";
+}
+.main{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    background: rgb(14 14 14 / 10%);
+    border-radius: 15px;
+    padding: 3rem 20rem;
+    width: 80%;
+    max-width: 400px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 3px solid #EF6C00;
+}
+.main__login{
+    position: relative;
+}
+.main__login span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    display: none;
+    width: 100%;
+}
+.main__title{
+    color: #fff;
+    padding-bottom: 1rem;
+    font-size: 5rem;
+}
+.main input{
+ 
+    margin-bottom: 2rem; 
+    padding: 1rem 9rem 1rem 1rem;
+    border-radius: 2rem;
+    border: 2px solid #FFA726; 
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #121212; 
+    font-size: 1.2rem; 
+   
+    outline: none; 
+    transition: all 0.3s ease; 
+}
+.main input::placeholder{
+    color: #424242;
+}
+
+.main input:focus {
+    border-color: #EF6C00; 
+    background-color: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 0 10px #FFA726; 
+}
+.main label{
+    color: #fff;
+    padding-right: 18rem;
+    font-weight: bold;
+}
+.toggle__password svg{
+    cursor: pointer;
+    width: 2rem;
+    position: absolute;
+    top: 2.3rem;
+    right: 0.5rem;
+}
+.btn{
+    cursor: pointer;
+    padding: 1rem 11rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: #EF6C00;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: #FFA726;
+}
+
+
+@media (max-width: 576px) {
+    .main {
+        width: 100%;
+        padding: 2rem;
+        margin-top: 3rem auto;
+    }
+
+    .main__title {
+        font-size: 3rem; 
+    }
+
+    .main input {
+        padding: 1rem 2rem; 
+        font-size: 1rem; 
+    }
+    .main input[type=text] {
+        margin-bottom: 3rem;
+    }
+
+    .btn {
+        padding: 1rem 6.5rem; 
+    }
+
+    .main label {
+        padding-right: 2rem;
+    }
+}
