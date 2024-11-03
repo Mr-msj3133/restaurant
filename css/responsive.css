@@ -60,6 +60,15 @@
         max-width: 100%;
         height: auto; 
     }
+    .content__search{
+        text-align: center;
+    }
+    .content__search h4{
+        font-size: 32px;
+    }
+    .content__search form input{
+        font-size: 13px
+    }
 }
 @media (min-width:576px) {
     .mobile__app{
@@ -131,6 +140,13 @@
     .mobile__app-img img {
         max-width: 100%;
 
+    }
+    .content__search form{
+        width: 90%;
+    }
+    .footer__site{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
     }
 
 }

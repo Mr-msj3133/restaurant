@@ -17,6 +17,11 @@
     --white-app:#F1F1F1;
     --yellow:#FFF6A3;
     --grey2:#7D7C7C;
+    --black:#504F4F;
+    --pink2:#FFFDE6;
+    --black2:#323232;
+
+
 }
 a{
     text-decoration: none;
@@ -379,3 +384,108 @@ body{
     padding-top: 1rem;
     gap: 2rem;
 }
+.content__search{
+    background-color: var(--black);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    height: 400px;
+    border-radius: 1rem;
+}
+.content__search h4{
+   font-size: 48px;
+   color: var(--pink2);
+}
+.content__search p{
+   color: var(--white-app);
+}
+.content__search img{
+    max-width: 187px;
+    object-fit: cover;
+    position: absolute;
+}
+.content__search :nth-child(4){
+   top: 10%;
+   left: 0;
+}
+.content__search :nth-child(5){
+   bottom: 0;
+   left: 20%;
+}
+.content__search-form{
+    padding-top: 1rem;
+    position: relative;
+    position: relative;
+    width: 45%;
+    height: 56px;
+    padding:0 1rem;
+}
+.content__search form input{
+    height: 100%;
+    width: 100%;
+    background-color: var(--orange);
+    border: 0;
+    font-size: 16px;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+.content__search form button{
+    position: absolute;
+    padding: 12px 24px;
+    border: 0;
+    right: 2rem;
+    top: 43%;
+    background-color: var(--white-app);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--pink2);
+    padding: 32px 0;
+    margin-top: 5rem;
+}
+.footer__site{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer__site-info{
+
+}
+.footer__logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer__logo h4{
+    font-size: 28px;
+    
+}
+.footer__logo img{
+    width: 4rem;
+    height: 3rem;
+    background-color: var(--app-color);
+}
+.footer__logo-link{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.footer__site-link h5{
+    color: var(--black2);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+.footer__site-link ul li{
+    color: var(--black2);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 36px;
+}
+               
